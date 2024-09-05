@@ -3,12 +3,513 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>AmpedStudio</title>
   </head>
   <body>
-    <div id="app">
-      <div class="test"></div>
+
+    <div class="wrapper">
+
+      <header class="header"></header>
+
+      <main class="main">
+
+        <section class="hero-section section">
+          <div class="text-banner">
+            <div class="text-banner__text">
+              <div class="hero-section__container section__container container">
+                <div class="text-banner__text-inner">
+                  <h1 class="hero-section__title section__title section__title--big">
+                    <span style="text-align: center;">Create</span>
+                    music online:
+                    <span style="text-align: right;">powerful, easy,<br> for everyone</span>
+                  </h1>
+                  <div class="hero-section__text text">
+                    <p>Amped Studio: Web-based music studio for all levels. AI tools and intuitive interface make music creation accessible.</p>
+                    <p>Your next hit is just a click away!</p>
+                  </div>
+                  <a class="hero-section__btn btn" href="#">Get start’s now</a>
+                </div>
+              </div>
+            </div>
+            <div class="text-banner__banner">
+              <picture>
+                <source srcset="public/images/hero-mobile.jpg" media="(max-width: 360px)">
+                <source srcset="public/images/hero-tablet.jpg" media="(max-width: 900px)">
+                <img src="public/images/hero.jpg">
+              </picture>
+              <ul class="hero-section__highlights highlights">
+                <li class="highlights__item">AI Assistance</li>
+                <li class="highlights__item">Professional tools</li>
+                <li class="highlights__item">Education platform</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <!-- /hero-section -->
+
+        <section class="advantages-section section section--color">
+          <div class="advantages-section__container section__container container">
+            <ul class="cards">
+              <li class="cards__item cards__item--icon">
+                <div class="cards__item-ico"><img src="public/images/advantages/collection.svg" alt=""></div>
+                <div class="cards__item-title">Huge Collection</div>
+                <div class="cards__item-text"><p>Rich selection of plugins, effects, loops and samples</p></div>
+              </li>
+              <li class="cards__item cards__item--icon">
+                <div class="cards__item-ico"><img src="public/images/advantages/medal.svg" alt=""></div>
+                <div class="cards__item-title">Superior Quality</div>
+                <div class="cards__item-text"><p>Professional-grade sound for all your projects</p></div>
+              </li>
+              <li class="cards__item cards__item--icon">
+                <div class="cards__item-ico"><img src="public/images/advantages/note.svg" alt=""></div>
+                <div class="cards__item-title">Soundshop</div>
+                <div class="cards__item-text"><p>Samples, construction kits and tracks</p></div>
+              </li>
+              <li class="cards__item cards__item--icon">
+                <div class="cards__item-ico"><img src="public/images/advantages/infinity.svg" alt=""></div>
+                <div class="cards__item-title">Seamless Integration</div>
+                <div class="cards__item-text"><p>Effortlessly manage and integrate your audio resources</p></div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- .advantages-section -->
+
+        <section class="about-section section">
+          <div class="about-section__container section__container container">
+            <h2 class="about-section__title section__title">Get your project up and running effortlessly with Amped Studio</h2>
+            <div class="text-image">
+              <div class="text-image__text">
+                <div class="text-image__title">MIDI song starter</div>
+                <div class="text"><p>With Smart Midi you can save a midi region and the effect settings and instrument presets will be saved and stored so you can use the exact midi file with settings in the future.</p></div>
+                <a class="btn" href="#">Read more</a>
+              </div>
+              <div class="text-image__image"><img src="public/images/about/midi-song-starter.jpg" alt=""></div>
+            </div>
+            <div class="text-image text-image--reverse">
+              <div class="text-image__text">
+                <div class="text-image__text-title">AI melody generator </div>
+                <div class="text"><p>Dive into a world of AI Music Generator where musical expertise is at your fingertips, allowing you to produce tunes in mere moments!</p></div>
+                <a class="btn" href="#">Read more</a>
+              </div>
+              <div class="text-image__image"><img src="public/images/about/ai-melody-generator.jpg" alt=""></div>
+            </div>
+            <div class="text-image">
+              <div class="text-image__text">
+                <div class="text-image__text-title">AI Melody splitter</div>
+                <div class="text"><p>Splitter uses AI to split an audio track into 2, 4, or 5 tracks, ideal for remixing, isolating samples, and analyzing individual parts.</p></div>
+                <a class="btn" href="#">Read more</a>
+              </div>
+              <div class="text-image__image"><img src="public/images/about/ai-melody-splitter.jpg" alt=""></div>
+            </div>
+          </div>
+        </section>
+        <!-- /about-section -->
+
+        <section class="ai-tools-section section">
+          <div class="ai-tools-section__container section__container container">
+            <h2 class="ai-tools-section__title section__title">Studio-quality Boost your creative potential with AI-powered tools</h2>
+            <div class="ai-tools-section__cards cards">
+              <div class="cards__item">
+                <div class="bg"><img src="public/images/ai-tools/ai-assistant.jpg" alt=""></div>
+                <div class="cards__item-inner">
+                  <div class="cards__item-title">AI Assistant</div>
+                  <div class="cards__item-text"><p>You can start a track easily by utilizing the AI Assistant for ideas</p></div>
+                </div>
+              </div>
+              <div class="cards__item">
+                <div class="bg"><img src="public/images/ai-tools/ai-powered.jpg" alt=""></div>
+                <div class="cards__item-inner">
+                  <div class="cards__item-title">AI-Powered</div>
+                  <div class="cards__item-text"><p>Our smart AI algorithm offers you pro-like results in no time</p></div>
+                </div>
+              </div>
+              <div class="cards__item">
+                <div class="bg"><img src="public/images/ai-tools/easy-to-use.jpg" alt=""></div>
+                <div class="cards__item-inner">
+                  <div class="cards__item-title">Easy to use</div>
+                  <div class="cards__item-text"><p>Zero learning curve, no complications. Unlock your creativity effortlessly</p></div>
+                </div>
+              </div>
+            </div>
+            <div class="section__content section__content--rigth">
+              <div class="section__text text">
+                <p>Integrate AI advancements into content creation to boost productivity and personal wellness in your process</p>
+              </div>
+              <a class="section__btn btn" href="#">Get start’s with AI</a>
+            </div>
+          </div>
+        </section>
+        <!-- /ai-tools-section -->
+
+        <section class="tracks-section section section--color">
+          <div class="tracks-section__container section__container container">
+            <h2 class="tracks-section__title section__title">Begin exploring AmpedStudio to discover its features</h2>
+            <div class="tracks-section__swiper cards swiper">
+              <div class="swiper-wrapper">
+                <div class="cards__item swiper-slide">
+                  <div class="bg"><img src="public/images/tracks/dnb-glide.jpg" alt=""></div>
+                  <div class="cards__inner">
+                    <div class="cards__item-title">DnB Glide — demo track</div>
+                    <a class="cards__item-btn btn" href="#">View project</a>
+                  </div>
+                </div>
+                <div class="cards__item cards__item--text swiper-slide">
+                  <div class="cards__inner">
+                    <div class="cards__item-text"><p>Experience the complete potential of the studio by transitioning to projects</p></div>
+                    <a class="cards__item-btn btn" href="#">View all projects</a>
+                  </div>
+                </div>
+                <div class="cards__item swiper-slide">
+                  <div class="bg"><img src="public/images/tracks/dnb-glide.jpg" alt=""></div>
+                  <div class="cards__inner">
+                    <div class="cards__item-title">Soft Bounce – demo track</div>
+                    <a class="cards__item-btn btn" href="#">View project</a>
+                  </div>
+                </div>
+                <div class="cards__item swiper-slide">
+                  <div class="bg"><img src="public/images/tracks/dnb-glide.jpg" alt=""></div>
+                  <div class="cards__inner">
+                    <div class="cards__item-title">GUITAR LOFI – demo track</div>
+                    <a class="cards__item-btn btn" href="#">View project</a>
+                  </div>
+                </div>
+                <div class="cards__item swiper-slide">
+                  <div class="bg"><img src="public/images/tracks/dnb-glide.jpg" alt=""></div>
+                  <div class="cards__inner">
+                    <div class="cards__item-title">Grime – demo track</div>
+                    <a class="cards__item-btn btn" href="#">View project</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-scrollbar"></div>
+            </div>
+          </div>
+        </section>
+        <!-- /tracks-section -->
+
+        <section class="tools-section section">
+          <div class="tools-section__container section__container container">
+            <h2 class="tools-section__title section__title">Access top-tier tools right at your fingertips for a seamless experience</h2>
+            <div class="tools-section__row">
+              <div class="tools-section__cards cards cards--banner">
+                <div class="cards__item">
+                  <div class="bg"><img src="public/images/tools/dexed.jpg" alt=""></div>
+                  <div class="cards__item-inner">
+                    <div class="cards__item-title">Dexed</div>
+                    <div class="cards__item-text"><p>Classic FM synthesizer for diverse sounds.</p></div>
+                    <a class="cards__item-btn btn btn--arrow" href="#">Learn more</a>
+                  </div>
+                </div>
+                <div class="cards__item">
+                  <div class="bg"><img src="public/images/tools/dexed.jpg" alt=""></div>
+                  <div class="cards__item-inner">
+                    <div class="cards__item-title">Dexed</div>
+                    <div class="cards__item-text"><p>Classic FM synthesizer for diverse sounds.</p></div>
+                    <a class="cards__item-btn btn btn--arrow" href="#">Learn more</a>
+                  </div>
+                </div>
+                <div class="cards__item">
+                  <div class="bg"><img src="public/images/tools/dexed.jpg" alt=""></div>
+                  <div class="cards__item-inner">
+                    <div class="cards__item-title">Dexed</div>
+                    <div class="cards__item-text"><p>Classic FM synthesizer for diverse sounds.</p></div>
+                    <a class="cards__item-btn btn btn--arrow" href="#">Learn more</a>
+                  </div>
+                </div>
+                <div class="cards__item">
+                  <div class="bg"><img src="public/images/tools/dexed.jpg" alt=""></div>
+                  <div class="cards__item-inner">
+                    <div class="cards__item-title">Dexed</div>
+                    <div class="cards__item-text"><p>Classic FM synthesizer for diverse sounds.</p></div>
+                    <a class="cards__item-btn btn btn--arrow" href="#">Learn more</a>
+                  </div>
+                </div>
+                <div class="cards__item">
+                  <div class="bg"><img src="public/images/tools/dexed.jpg" alt=""></div>
+                  <div class="cards__item-inner">
+                    <div class="cards__item-title">Dexed</div>
+                    <div class="cards__item-text"><p>Classic FM synthesizer for diverse sounds.</p></div>
+                    <a class="cards__item-btn btn btn--arrow" href="#">Learn more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="tools-section__text-wrapper">
+                <div class="tools-section__text"><p>Unleash the full potential of your musical journey with our cutting-edge tools</p></div>
+                <a class="tools-section__text" href="#">Get start’s now</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- /tools-section -->
+
+        <section class="effects-section section">
+          <div class="effects-section__container section__container container">
+            <h2 class="effects-section__title section__title">Studio-quality effects</h2>
+            <div class="effects-section__swiper cards cards--big swiper">
+              <div class="swiper-wrapper">
+                <div class="cards__item swiper-slide">
+                  <div class="bg"><img src="public/images/effects/guitar-amp-simulators.jpg" alt=""></div>
+                  <div class="cards__inner">
+                    <div class="cards__item-title">Guitar Amp Simulators</div>
+                    <a class="cards__item-btn btn" href="#"><p>Clean Machine<br> Distortion MachineMetal<br> Machine</p></a>
+                  </div>
+                </div>
+                <div class="cards__item swiper-slide">
+                  <div class="bg"><img src="public/images/effects/guitar-amp-simulators.jpg" alt=""></div>
+                  <div class="cards__inner">
+                    <div class="cards__item-title">Guitar Amp Simulators</div>
+                    <a class="cards__item-btn btn" href="#"><p>Clean Machine<br> Distortion MachineMetal<br> Machine</p></a>
+                  </div>
+                </div>
+                <div class="cards__item swiper-slide">
+                  <div class="bg"><img src="public/images/effects/guitar-amp-simulators.jpg" alt=""></div>
+                  <div class="cards__inner">
+                    <div class="cards__item-title">Guitar Amp Simulators</div>
+                    <a class="cards__item-btn btn" href="#"><p>Clean Machine<br> Distortion MachineMetal<br> Machine</p></a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-scrollbar"></div>
+            </div>
+            <div class="section__content section__content--right">
+              <div class="section__text"><p>Unlock the potential of your music with our collection of high-quality studio effects. From classic reverb to modern distortions — we have everything you need to create world-class sound.</p></div>
+              <a class="section__btn btn" href="#">Get start’s with AI</a>
+            </div>
+          </div>
+        </section>
+        <!-- /effects-section -->
+
+        <section class="target-audience-section section">
+          <div class="target-audience-section__container section__container container">
+            <h2 class="target-audience-section__title section__title">AmpedStudio is for everyone</h2>
+            <div class="target-audience-section__cards cards cards--curves">
+              <div class="cards__col">
+                <div class="cards__item">
+                  <div class="bg"><img src="public/images/ampedstudio-everyone/beatmakers.jpg" alt=""></div>
+                  <div class="cards__inner">
+                    <div class="cards__item-title">Beatmakers</div>
+                    <div class="cards__text"><p>Unique ability to connect third-party instruments and effects using VST technology. The process of making music online is becoming easier, more flexible and versatile.</p></div>
+                    <a class="cards__btn btn btn--arrow" href="#">Learn more</a>
+                  </div>
+                </div>
+                <div class="cards__item">
+                  <div class="bg"><img src="public/images/ampedstudio-everyone/vocalists.jpg" alt=""></div>
+                  <div class="cards__inner">
+                    <div class="cards__item-title">vocalists</div>
+                    <div class="cards__text"><p>Unique ability to connect third-party instruments and effects using VST technology. The process of making music online is becoming easier, more flexible and versatile.</p></div>
+                    <a class="cards__btn btn btn--arrow" href="#">Learn more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="cards__col">
+                <div class="cards__item">
+                  <div class="bg"><img src="public/images/ampedstudio-everyone/vst.jpg" alt=""></div>
+                  <div class="cards__inner">
+                    <div class="cards__item-title">VST</div>
+                    <div class="cards__text"><p>Unique ability to connect third-party instruments and effects using VST technology. The process of making music online is becoming easier, more flexible and versatile.</p></div>
+                    <a class="cards__btn btn btn--arrow" href="#">Learn more</a>
+                  </div>
+                </div>
+                <div class="cards__item">
+                  <div class="bg"><img src="public/images/ampedstudio-everyone/voice-melody.jpg" alt=""></div>
+                  <div class="cards__inner">
+                    <div class="cards__item-title">Voice melody</div>
+                    <div class="cards__text"><p>Create your melodies with the HumBeatz app by humming into your device. Your hums are transformed into midi tracks, perfect for those without musical notation. All for your convenience!</p></div>
+                    <a class="cards__btn btn btn--arrow" href="#">Learn more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="cards__col">
+                <div class="cards__item">
+                  <div class="bg"><img src="public/images/ampedstudio-everyone/guitar.jpg" alt=""></div>
+                  <div class="cards__inner">
+                    <div class="cards__item-title">Guitar</div>
+                    <div class="cards__text"><p>Unique ability to connect third-party instruments and effects using VST technology. The process of making music online is becoming easier, more flexible and versatile.</p></div>
+                    <a class="cards__btn btn btn--arrow" href="#">Learn more</a>
+                  </div>
+                </div>
+                <div class="cards__item">
+                  <div class="bg"><img src="public/images/ampedstudio-everyone/keyboardists.jpg" alt=""></div>
+                  <div class="cards__inner">
+                    <div class="cards__item-title">Keyboardists</div>
+                    <div class="cards__text"><p>Unique ability to connect third-party instruments and effects using VST technology. The process of making music online is becoming easier, more flexible and versatile.</p></div>
+                    <a class="cards__btn btn btn--arrow" href="#">Learn more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- /target-audience -->
+
+        <section class="reviews-section section section--color">
+          <div class="reviews-section__container section__container container">
+            <h2 class="reviews-section__title section__title">Discover what our users have to say</h2>
+            <div class="reviews swiper">
+              <div class="swiper-wrapper">
+                <div class="reviews__item swiper-slide">
+                  <div class="reviews__item-header">
+                    <div class="reviews__item-rating">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                    <div class="reviews__item-nickname">Nickname</div>
+                  </div>
+                  <div class="reviews__item-text">
+                    <p>AmpedStudio has changed my approach to music creation.</p>
+                    <p>The intuitive interface and powerful tools helped me bring my ideas to life. Now I can create professional-sounding tracks right from home!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-scrollbar"></div>
+            </div>
+          </div>
+        </section>
+        <!-- /reviews-section -->
+
+        <section class="workshop-section section">
+          <div class="workshop-section__container section__container container">
+            <h2 class="workshop-section__title section__title">Get to master Amped Studio</h2>
+            <div class="text-thumbnail">
+              <div class="text-thumbnail__text">
+                <div class="text-thumbnail__title">Boost your music-making skills with our learning resources</div>
+                <div class="text">
+                  <p>From detailed manuals to video tutorials and FAQs, we've got everything you need to become an Amped Studio pro.</p>
+                  <p>Start learning today!</p>
+                </div>
+                <a class="text-thumbnail__btn btn btn--arrow btn--white" href="#">Learn more</a>
+              </div>
+              <div class="text-thumbnail__thumbnail"><img src="public/images/workshop.jpg" alt=""></div>
+            </div>
+          </div>
+        </section>
+        <!-- /workshop-section -->
+
+        <section class="partnerships-section section section--color">
+          <div class="partnerships-section__container section__container container">
+            <h2 class="partnerships-section__title section__title">Meet our partners and join to our partnership’s program</h2>
+            <div class="partnerships-section__swiper cards">
+              <div class="cards__item">
+                <div class="bg"><img src="public/images/partners/babyaudio.jpg" alt=""></div>
+                <div class="cards__inner">
+                  <div class="cards__item-title">For Premium users</div>
+                  <div class="cards__item-text"><p>15% off in all products</p></div>
+                  <a class="cards__item-btn btn btn--arrow" href="#">Learn more</a>
+                </div>
+              </div>
+              <div class="cards__item cards__item--text">
+                <div class="cards__inner">
+                  <div class="cards__item-text"><p>Experience the complete potential of the studio by transitioning to projects</p></div>
+                  <a class="cards__item-btn btn" href="#">View all projects</a>
+                </div>
+              </div>
+              <div class="cards__item">
+                <div class="bg"><img src="public/images/partners/labelradar.jpg" alt=""></div>
+                <div class="cards__inner">
+                  <div class="cards__item-title">For Premium users</div>
+                  <div class="cards__item-text">
+                    <p>50% off / 1st month — LabelRadar PRO monthly plan</p>
+                    <p>40% off / LabelRadar PRO annual plan</p>
+                  </div>
+                  <a class="cards__item-btn btn btn--arrow" href="#">Learn more</a>
+                </div>
+              </div>
+              <div class="cards__item">
+                <div class="bg"><img src="public/images/partners/labelradar.jpg" alt=""></div>
+                <div class="cards__inner">
+                  <div class="cards__item-title">For Premium users</div>
+                  <div class="cards__item-text">
+                    <p>50% off / 1st month — LabelRadar PRO monthly plan</p>
+                    <p>40% off / LabelRadar PRO annual plan</p>
+                  </div>
+                  <a class="cards__item-btn btn btn--arrow" href="#">Learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- /partnerships-section -->
+
+        <section class="articles-section section">
+          <div class="articles-section__container section__container">
+            <h2 class="articles-section__title section__title"></h2>
+            <div class="articles-section__row">
+              <div class="articles-section__articles-grid cards cards--preview">
+                <div class="cards__item">
+                  <div class="cards__item-image"><img src="public/images/articles/image 54.jpg" alt=""></div>
+                  <div class="cards__item-title">Amped Studio Remix Challenge #1 Featuring: Protohype & Charmae</div>
+                  <div class="cards__item-text"><p>Remix Protohype & Charmae new song “Remedy” and win more than 2K in prizes and get signed!</p></div>
+                </div>
+                <div class="cards__item">
+                  <div class="cards__item-image"><img src="public/images/articles/image 54-5.jpg" alt=""></div>
+                  <div class="cards__item-title">Swing rhythm</div>
+                  <div class="cards__item-text"><p>Swing is so deeply ingrained in jazz that in the 1930s, a whole subgenre called “swing” emerged, often featuring large jazz bands playing dynamic pieces.</p></div>
+                </div>
+              </div>
+              <div class="articles-section__articles-column cards cards--preview cards--column">
+                <div class="cards__item">
+                  <div class="cards__item-image"><img src="public/images/articles/image 54.jpg" alt=""></div>
+                  <div class="cards__item-title">Lydian dominant scale</div>
+                  <div class="cards__item-text"><p>The Lydian mode stands out among the major modes for its unique use of the augmented interval. In this article, we’ll cover everything you need to know about the Lydian mode and why it’s one of the most sought-after modes in Western music theory</p></div>
+                </div>
+                <div class="cards__item">
+                  <div class="cards__item-image"><img src="public/images/articles/image 54-5.jpg" alt=""></div>
+                  <div class="cards__item-title">What is audio clipping</div>
+                  <div class="cards__item-text"><p>Let’s face it, the world of audio systems can seem like a real jungle. Speakers, amplifiers, and a lot of technical jargon can be confusing. But don’t worry! Today, we’ll tackle one of the mos</p></div>
+                </div>
+                <div class="cards__item">
+                  <div class="cards__item-image"><img src="public/images/articles/image 54.jpg" alt=""></div>
+                  <div class="cards__item-title">Reverse reverb</div>
+                  <div class="cards__item-text"><p>In this section, we will talk about the method of using reverb on melodies or vocals with an expanded audio file. A technique called reverse reverb creates interesting sound effects and atmospheric build-ups that can be integrated into tracks of any genre.</p></div>
+                </div>
+                <div class="cards__item">
+                  <div class="cards__item-image"><img src="public/images/articles/image 54-5.jpg" alt=""></div>
+                  <div class="cards__item-title">Binaural Audio</div>
+                  <div class="cards__item-text"><p>Imagine being in a movie theater, where the sounds coming from all around you create the impression of being completely immersed in the action. Sound designers and filmmakers try to create this effect by using multi-channel sound systems placed throughout the theater</p></div>
+                </div>
+              </div>
+            </div>
+            <div class="section__content section__content--right">
+              <div class="section__text text"><p>Get more up-to-date information by clicking on the link</p></div>
+              <a class="section__btn btn" href="#">View all Articles</a>
+            </div>
+          </div>
+        </section>
+        <!-- /articles-section -->
+
+        <section class="make-music-section section section--dark">
+          <div class="make-music-section__container section__container container">
+            <div class="text-image">
+              <div class="text-image__text">
+                <h2 class="section__title">Make music online with our powerful, user-friendly studio</h2>
+                <div class="text"><p>Craft your hit with our assistance! We provide all the tools and expertise for your success. Eager to shine bright? Sign up now and transform your dream into reality!</p></div>
+                <div class="buttons">
+                  <a class="btn btn--white" href="#">Move to studio</a>
+                  <a class="btn" href="#">Registration</a>
+                </div>
+              </div>
+              <div class="text-image__image"><img src="public/images/make-music.jpg" alt=""></div>
+            </div>
+          </div>
+        </section>
+        <!-- /make-music-section -->
+
+      </main>
+
+      <footer class="footer"></footer>
+
     </div>
+    
     <script type="module" src="/src/js/main.js"></script>
   </body>
 </html>
