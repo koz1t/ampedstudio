@@ -1,15 +1,17 @@
-// @import 'scss/abstracts/variables';
-// @import 'scss/abstracts/placeholders';
-// @import 'scss/abstracts/animations';
+@import 'abstracts/variables';
+@import 'abstracts/placeholders';
+@import 'abstracts/animations';
 
-// @import 'scss/vendors/reset';
+@import 'vendors/reset';
 
-// @import 'scss/base/base';
-// @import 'scss/base/typography';
+@import 'base/base';
+@import 'base/typography';
 
-// @import 'scss/layout/header';
-// @import 'scss/layout/footer';
+@import 'layout/header';
+@import 'layout/container';
+@import 'layout/section';
+// @import 'layout/footer';
 
-// @import 'scss/components/';
+// @import 'components/';
 
-// @import 'scss/pages/home';
+@import 'pages/home';

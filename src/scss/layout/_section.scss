@@ -1,0 +1,24 @@
+.section {
+  &__container {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .section {
+    &__container {
+      padding-top: 5.7778rem;
+      padding-bottom: 5.7778rem;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .section {
+    &__container {
+      padding-top: 2.6667rem;
+      padding-bottom: 2.6667rem;
+    }
+  }
+}
