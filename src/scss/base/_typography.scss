@@ -38,6 +38,12 @@ html, body {
   color: var(--base-font-color);
 }
 
+@media (max-width: 1793px) {
+  html, body {
+    font-size: var(--base-desktop-font-size);
+  }
+}
+
 @media (max-width: 900px) {
   html, body {
     font-size: var(--base-tablet-font-size);

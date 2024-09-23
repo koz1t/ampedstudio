@@ -1,11 +1,9 @@
 import '../scss/style.scss'
 
-import { swiper } from './vendors/swiper-bundle.min.js'; // Swiper slider
-import { swiperInit } from './_swiper-init.js'; // Swiper init
-import { masonry } from './vendors/masonry.pkgd.min.js'; // Swiper slider
+import { swiperInit } from './_swiper-init.js';
+import { transferElements } from './_transfer-elements.js'; // 
 
 document.addEventListener('DOMContentLoaded', function() {
-  swiper();
   swiperInit();
-  masonry();
+  transferElements();
 })

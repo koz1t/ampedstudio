@@ -8,11 +8,23 @@
 @import 'base/base';
 @import 'base/typography';
 
-@import 'layout/header';
-@import 'layout/container';
-@import 'layout/section';
-// @import 'layout/footer';
+@import 'components/btn';
+@import 'components/star-rating';
 
-// @import 'components/';
+@import 'layout/container';
+@import 'layout/nav';
+// @import 'layout/header';
+@import 'layout/footer';
+@import 'layout/section';
+@import 'layout/layout';
+@import 'layout/text';
+@import 'layout/highlights';
+@import 'layout/content-banner';
+@import 'layout/content-image';
+@import 'layout/content-thumbnail';
+@import 'layout/swiper';
+@import 'layout/cards';
+@import 'layout/reviews';
+@import 'layout/previews';
 
 @import 'pages/home';

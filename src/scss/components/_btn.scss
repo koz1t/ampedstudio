@@ -1,0 +1,109 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.56rem 1.67rem;
+  border: 0.08333rem solid var(--light-primary-color);
+  border-radius: 1.33333rem;
+  cursor: pointer;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 140%;
+  text-align: center;
+  color: var(--base-font-color);
+  text-transform: uppercase;
+  transition: 0.3s all, 0.05s transform;
+  &--arrow {
+    gap: 0.33rem;
+    &::after {
+      content: '';
+      width: 0.9167rem;
+      height: 0.9167rem;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 22 22' fill='none'%3E%3Cpath d='M19.0489 11.4868L12.8614 17.6743C12.7324 17.8033 12.5574 17.8758 12.375 17.8758C12.1926 17.8758 12.0176 17.8033 11.8886 17.6743C11.7596 17.5453 11.6871 17.3703 11.6871 17.1879C11.6871 17.0054 11.7596 16.8305 11.8886 16.7015L16.903 11.6879H3.4375C3.25516 11.6879 3.0803 11.6154 2.95136 11.4865C2.82243 11.3576 2.75 11.1827 2.75 11.0004C2.75 10.818 2.82243 10.6432 2.95136 10.5142C3.0803 10.3853 3.25516 10.3129 3.4375 10.3129H16.903L11.8886 5.29929C11.7596 5.17029 11.6871 4.99532 11.6871 4.81288C11.6871 4.63044 11.7596 4.45548 11.8886 4.32648C12.0176 4.19747 12.1926 4.125 12.375 4.125C12.5574 4.125 12.7324 4.19747 12.8614 4.32648L19.0489 10.514C19.1128 10.5778 19.1635 10.6536 19.1981 10.7371C19.2327 10.8206 19.2505 10.91 19.2505 11.0004C19.2505 11.0907 19.2327 11.1802 19.1981 11.2637C19.1635 11.3471 19.1128 11.4229 19.0489 11.4868Z' fill='%23060606'/%3E%3C/svg%3E") no-repeat center / contain;
+      transition: inherit;
+    }
+  }
+  &--white {
+    background: #fff;
+    border-color: #fff;
+  }
+  &--small {
+    padding: 0.42rem 0.83rem;
+    font-size: 0.58333rem;
+    &.btn--arrow {
+      &::after {
+        width: 0.6667rem;
+        height: 0.6667rem;
+      }
+    }
+  }
+  &:hover {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #fff;
+    &.btn--arrow {
+      &::after {
+        transform: translateX(10%);
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 22 22' fill='none'%3E%3Cpath d='M19.0489 11.4868L12.8614 17.6743C12.7324 17.8033 12.5574 17.8758 12.375 17.8758C12.1926 17.8758 12.0176 17.8033 11.8886 17.6743C11.7596 17.5453 11.6871 17.3703 11.6871 17.1879C11.6871 17.0054 11.7596 16.8305 11.8886 16.7015L16.903 11.6879H3.4375C3.25516 11.6879 3.0803 11.6154 2.95136 11.4865C2.82243 11.3576 2.75 11.1827 2.75 11.0004C2.75 10.818 2.82243 10.6432 2.95136 10.5142C3.0803 10.3853 3.25516 10.3129 3.4375 10.3129H16.903L11.8886 5.29929C11.7596 5.17029 11.6871 4.99532 11.6871 4.81288C11.6871 4.63044 11.7596 4.45548 11.8886 4.32648C12.0176 4.19747 12.1926 4.125 12.375 4.125C12.5574 4.125 12.7324 4.19747 12.8614 4.32648L19.0489 10.514C19.1128 10.5778 19.1635 10.6536 19.1981 10.7371C19.2327 10.8206 19.2505 10.91 19.2505 11.0004C19.2505 11.0907 19.2327 11.1802 19.1981 11.2637C19.1635 11.3471 19.1128 11.4229 19.0489 11.4868Z' fill='%23fff'/%3E%3C/svg%3E");
+      }
+    }
+  }
+  &:active {
+    background: var(--dark-primary-color);
+    border-color: var(--dark-primary-color);
+    transform: scale(0.98);
+    transition: 0.3s all, 0.05s transform, 0.05s background;
+  }
+}
+
+@media (max-width: 900px) {
+  .btn {
+    padding: 0.67rem 1.4rem;
+    border-width: 0.1rem;
+    border-radius: 1.6rem;
+    font-size: 0.9rem;
+    &--arrow {
+      gap: 0.4rem;
+      &::after {
+        width: 1.1rem;
+        height: 1.1rem;
+      }
+    }
+    &--small {
+      padding: 0.5rem 1rem;
+      font-size: 0.7rem;
+      &.btn--arrow {
+        &::after {
+          width: 0.8rem;
+          height: 0.8rem;
+        }
+      }
+    }
+  } 
+}
+
+@media (max-width: 360px) {
+  .btn {
+    padding: 0.62rem 2rem;
+    border-width: 0.125rem;
+    border-radius: 2rem;
+    font-size: 0.875rem;
+    &--arrow {
+      gap: 0.5rem;
+      &::after {
+        width: 1rem;
+        height: 1rem;
+      }
+    }
+    &--small {
+      padding: 0.63rem 1.25rem;
+      font-size: 0.875rem;
+      &.btn--arrow {
+        &::after {
+          width: 1rem;
+          height: 1rem;
+        }
+      }
+    }
+  } 
+}

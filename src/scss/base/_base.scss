@@ -22,3 +22,14 @@ body {
 img {
   max-width: 100%;
 }
+
+[class$="--only-mobile"] {
+  @media (min-width: 361px) {
+    display: none !important;
+  }
+}
+[class$="--hidden-mobile"] {
+  @media (max-width: 360px) {
+    display: none !important;
+  }
+}
