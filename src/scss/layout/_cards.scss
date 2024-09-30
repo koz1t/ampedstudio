@@ -196,7 +196,7 @@
   }
   &.swiper-initialized:not([class*="cards--"]),
   &--big.swiper-initialized {
-    @media (min-width: 361px) {
+    @media (min-width: 481px) {
       .swiper-pagination {
         display: none;        
       }
@@ -269,7 +269,7 @@
         .cards__item-title {
           font-weight: 700;
         }
-        @media (min-width: 361px) {
+        @media (min-width: 481px) {
           &:not(:hover) {
             .cards__item-list,
             .cards__item-text {
@@ -546,7 +546,7 @@
         }
       }
       .cards__item {
-        @media (min-width: 361px) {
+        @media (min-width: 481px) {
           &:not(:nth-child(3n+2)) {
             height: 13rem;
           }
@@ -568,7 +568,7 @@
   } 
 }
 
-@media (max-width: 360px) {
+@media (max-width: 480px) {
   .cards {
     &__item {
       &-inner {

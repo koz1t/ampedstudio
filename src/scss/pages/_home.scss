@@ -9,6 +9,7 @@
   &__title {
     display: flex;
     flex-direction: column;
+    margin-bottom: 0 !important;
   }
   &__text-wrapper {
     @extend %flex-column;
@@ -39,7 +40,7 @@
   } 
 }
 
-@media (max-width: 360px) {
+@media (max-width: 480px) {
   .hero-section {
     &__title span:nth-child(odd),
     &__text-wrapper {

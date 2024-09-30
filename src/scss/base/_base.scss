@@ -24,12 +24,12 @@ img {
 }
 
 [class$="--only-mobile"] {
-  @media (min-width: 361px) {
+  @media (min-width: 481px) {
     display: none !important;
   }
 }
 [class$="--hidden-mobile"] {
-  @media (max-width: 360px) {
+  @media (max-width: 480px) {
     display: none !important;
   }
 }

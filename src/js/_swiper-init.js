@@ -15,7 +15,7 @@ export function swiperInit() {
       },
       speed: 500,
       breakpoints: {
-        361: {
+        481: {
           slidesPerView: 2,
         },
         901: {
@@ -37,7 +37,7 @@ export function swiperInit() {
       },
       speed: 500,
       breakpoints: {
-        376: {
+        481: {
           slidesPerView: 1.1,
         },
         901: {
@@ -80,7 +80,7 @@ export function swiperInit() {
       },
       speed: 500,
       breakpoints: {
-        361: {
+        481: {
           slidesPerView: 2,
         },
         901: {
@@ -91,7 +91,7 @@ export function swiperInit() {
   
     const initializeSwiper = () => {
       const elements = document.querySelectorAll('.cards.swiper--mobile');
-      if (window.innerWidth <= 360) {
+      if (window.innerWidth <= 480) {
         elements.forEach(element => {
           if (!element.swiper) { // Проверяем, не инициализирован ли уже слайдер
             element.swiper = new Swiper(element, {

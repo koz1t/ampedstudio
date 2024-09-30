@@ -28,7 +28,7 @@
       }
     }
   }
-  @media (min-width: 361px) {
+  @media (min-width: 481px) {
     .swiper-pagination {
       display: none;
     }
@@ -56,7 +56,7 @@
   } 
 }
 
-@media (max-width: 360px) {
+@media (max-width: 480px) {
   .reviews {
     overflow: hidden;
     &__item {
