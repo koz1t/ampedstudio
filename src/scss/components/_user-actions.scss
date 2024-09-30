@@ -1,0 +1,18 @@
+.user-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.58rem;
+  &__btns {
+    display: flex;
+    align-items: center;
+    gap: 0.33rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .user-actions {
+    &__studio-btn {
+      display: none;
+    }
+  } 
+}

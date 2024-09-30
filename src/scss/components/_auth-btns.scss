@@ -1,0 +1,15 @@
+.auth-btns {
+  display: flex;
+  align-items: center;
+  gap: 0.33rem;
+  // &__btn {
+  //   padding: 0.46rem 1.17rem;
+  //   font-size: 0.66667rem;
+  // }
+}
+
+@media (max-width: 480px) {
+  .auth-btns {
+    gap: 0;
+  } 
+}

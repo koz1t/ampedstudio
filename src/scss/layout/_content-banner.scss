@@ -1,11 +1,12 @@
 .content-banner {
   display: flex;
+  background: #fff;
   &__content {
     flex: 0 0 100%;
     display: flex;
     align-items: center;
     &-inner {
-      width: calc(50% - 5.54rem);
+      width: calc(50% - 5rem);
     }
   }
   &__banner {

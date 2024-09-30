@@ -2,7 +2,7 @@
   &__list {
     display: flex;
     align-items: center;
-    gap: 2.31rem;
+    gap: 1.54rem;
   }
   &__item {
     display: flex;
@@ -11,6 +11,7 @@
     transition: 0.3s all;
   }
   &__link {
+    font-size: 0.66667rem;
     font-weight: 600;
     line-height: 120%;
     color: #2D3747;
@@ -41,7 +42,6 @@
       gap: 0.33rem;
     }
     .nav__link {
-      font-size: 0.66667rem;
       font-weight: 400;
       line-height: 140%;
       text-transform: none;

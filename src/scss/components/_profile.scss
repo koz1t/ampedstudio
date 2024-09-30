@@ -1,0 +1,90 @@
+.profile {
+  position: relative;
+  &__avatar {
+    width: 1.9167rem;
+    height: 1.9167rem;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14Z' fill='white'/%3E%3C/svg%3E") #BDBDBD no-repeat center / 65%;
+    border: 0.05rem solid transparent;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s all;
+    &:hover {
+      border-color: var(--primary-color);
+    }
+    img {
+      @extend %cover-image;
+    }
+  }
+  &__menu {
+    position: absolute;
+    top: calc(100% + 0.3rem);
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3333rem;
+    width: 7rem;
+    padding: 0.3333rem 0;
+    background: #F3F4F6;
+    transition: 0.4s all;
+    &-item {
+      &:not(:last-child) {
+        position: relative;
+        &::after {
+          content: '';
+          position: absolute;
+          top: calc(100% + 0.16665rem);
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: calc(100% - 1.3334rem);
+          height: 0.05rem;
+          background: #fff;
+        }
+      }
+    }
+    &-link {
+      display: block;
+      padding: 0.3333rem 0.6667rem;
+      font-size: 0.75rem;
+      line-height: 140%;
+      color: #2d3747;
+      transition: 0.3s all;
+      &:hover {
+        background: #d1d5db;
+      }
+    }
+  }
+  &:not(&--active) {
+    .profile__menu {
+      transform: translateY(10%);
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  &--active {
+    .profile__avatar {
+      border-color: var(--primary-color);
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .profile {
+    &__avatar {
+      width: 2.3rem;
+      height: 2.3rem;
+    }
+    &__menu {
+      gap: 0.3333rem;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .profile {
+    &__avatar {
+      width: 2.25rem;
+      height: 2.25rem;
+    }
+  }
+}

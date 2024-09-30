@@ -1,0 +1,20 @@
+export function burgerMenu() {
+  const 
+    burgerBtn = document.querySelector('.burger-btn'),
+    header = document.querySelector('.header');
+    
+  if (burgerBtn && header) {
+    const handleClickOutside = (e) => {
+      if (!e.target.closest('.nav__link') && !e.target.closest('.burger-btn')) {
+        header.classList.remove('header--burger-active');
+      }
+    };
+
+    burgerBtn.addEventListener('click', () => {
+      if (header.classList.toggle('header--burger-active'))
+        window.addEventListener('click', handleClickOutside);
+      else
+        window.removeEventListener('click', handleClickOutside);
+    })
+  }
+}

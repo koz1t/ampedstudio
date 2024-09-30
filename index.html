@@ -9,11 +9,70 @@
 
     <div class="wrapper">
 
-      <header class="header"></header>
+      <header class="header">
+        <div class="header__container container">
+          <a class="header__logo logo" href="/"><img src="public/images/logo.svg" alt=""></a>
+          <a class="header__studio-btn header__btn btn btn--fill" href="#">STUDIO</a>
+          <nav class="header__nav nav">
+            <ul class="nav__list">
+              <li class="nav__item"><a class="nav__link" href="#">Pricing</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Soundshop</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Tutorials</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Blog</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Partnerships</a></li>
+            </ul>
+          </nav>
+          <div class="header__burger-btn burger-btn"></div>
+          <nav class="header__burger-nav">
+            <ul class="header__burger-nav-list">
+              <li class="header__burger-nav-item">
+                <a class="header__burger-nav-link" href="#">Studio</a>
+              </li>
+              <li class="header__burger-nav-item">
+                <a class="header__burger-nav-link" href="#">Pricing</a>
+              </li>
+              <li class="header__burger-nav-item">
+                <a class="header__burger-nav-link" href="#">SoundShop</a>
+              </li>
+              <li class="header__burger-nav-item">
+                <a class="header__burger-nav-link" href="#">Tutorials</a>
+              </li>
+              <li class="header__burger-nav-item">
+                <a class="header__burger-nav-link" href="#">Blog</a>
+              </li>
+              <li class="header__burger-nav-item">
+                <a class="header__burger-nav-link" href="#">Partnerships</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- <div class="langs"></div> -->
+          <div class="header__auth-btns auth-btns">
+            <a class="header__btn btn btn--empty" href="#">Login</a>
+            <a class="header__btn btn btn--warning" href="#">Registration</a>
+          </div>
+          <!-- <div class="header__user-actions user-actions">
+            <div class="user-actions__btns">
+              <a class="user-actions__premium header__btn btn" href="#">Go Premium!</a>
+              <a class="user-actions__studio-btn header__btn btn btn--fill" href="#">STUDIO</a>
+            </div>
+            <div class="profile">
+              <div class="profile__avatar"></div>
+              <ul class="profile__menu">
+                <li class="profile__menu-item">
+                  <a class="profile__menu-link" href="#">Go to profile</a>
+                </li>
+                <li class="profile__menu-item">
+                  <a class="profile__menu-link" href="#">Log out</a>
+                </li>
+              </ul>
+            </div>
+          </div> -->
+        </div>
+      </header>
 
       <main class="main">
 
-        <section class="hero-section section">
+        <section class="hero-section section section--light">
           <div class="content-banner">
             <div class="content-banner__content">
               <div class="hero-section__container content-banner__container section__container container">
@@ -27,7 +86,7 @@
                     <div class="hero-section__text text">
                       <p>Begin exploring Amped Studio and discover the possibilities</p>
                     </div>
-<a class="btn btn--arrow" href="#"><span>Get start’s now</span></a>
+                    <a class="btn btn--arrow" href="#"><span>Get start’s now</span></a>
                   </div>
                 </div>
               </div>
@@ -57,9 +116,6 @@
               </ul>
             </div>
           </div>
-        </section>
-
-        <section class="section section--light">
           <div class="section__container section__container--low container">
             <div class="cards cards--grid swiper swiper--mobile">
               <div class="swiper-wrapper">
@@ -100,13 +156,13 @@
                   </div>
                 </div>
               </div>
-              <!-- <div class="swiper-control">
+              <div class="swiper-control" style="display: none;">
                 <div class="swiper-buttons">
                   <div class="swiper-button-prev"></div>
                   <div class="swiper-button-next"></div>
                 </div>
                 <div class="swiper-pagination"></div>
-              </div> -->
+              </div>
             </div>
           </div>
         </section>
@@ -675,98 +731,98 @@
                   </div>
                 </div>
                 <div class="cards__item swiper-slide">
-                  <div class="cards__item-inner">
-                    <div class="cards__item-image cards__item-image--gradient"><img src="public/images/workshop.jpg" alt=""></div>
+                  <div class="cards__item-inner" data-audio="https://amped-studio-content.s3.amazonaws.com/uploads/products/better-dreams-2/Better%20Dreams%202%20Demo.mp3">
+                    <div class="cards__item-image cards__item-image--gradient"><img src="https://d2dsarr59elxj9.cloudfront.net/uploads/products/better-dreams-2/image_processing20230308-1-1v6kraz.webp" alt=""></div>
+                    <div class="cards__item-hover-icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAA+CAYAAABzwahEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAM+SURBVHgB7ZpPSBRRHMd/vzc7bodQUOhQXZIyESMEK/9VVDf10iWiINOMbp06i506dIwO/VGQCiK6hRVIHW0tugjlH0QqCow6ZB7SnZ3367diQ647MTP7XrPjzAd2Z3fem9/sd3/z3vs+3gOIKQgaqZ8YqUGSN/k2nXwnAwgeg50bmGrv/wghkwKNoKQxQGxa/UKr7+cgldrFx6POmZAQoIn68eE2znLThgKCw3szI/sgZLQJJzK2g+tN5U4IGW3CISW19h+lok94mRO4c9uduV9p0spBIjSomsZn6i8sQYQIlPGGieHjKbCmAI0xFOK5+CE+1GWGOiBC+BaezzSBeISAf3VeWC3IeFg7dqsKIoJv4SkpW3lIqik8jwg70lXp/RARfLdxMuxKJJcOW9JWCIBqh+clnlbn5hXVDs9LvNCHM9UOz2u8wowjX9jFPfVZvjiNAu+8P9DzDDSSd3joktQ1hzcJPvAab13GGybuDbDoJ/zxNF97kmx62pAZvgI6Ue3wPMZzhO95/aCWyB4srMBD13UewkL31qpxHnXTXm5kE1a0kiGtRj58hjJAlWN0Mm4LkXatJMrD06t0jJGZpKh2jJERrtoxRkZ43jG6FgZwjLGdjyfC40YiPG4kwuNGIjxuJMLjRiI8biTC40YiPG4kwuNGZIQbFiy4lUmkZfBJZIQvb8lO8orYlyJFC2DRG/BJZITPN19aBClP8arg1z/nCGie/4zumQ7/qymOcEPKFddaJLJQBky39Y1buFQnUZwgKdtzYDZNt5x/CwFw1s6yFr4yK4rUIMytmDALZcJcy+WffHgJJeJkfO5I3zciulpYgZAG5pt7PsEmY10bn27tHQTMdXO7uY2EN/iPOMaP0jXQCQnXrR72P8pKjbdhD8zUof5RPozCfyPLzcgsWmJK+R00xQu9V59puThJCBuHI4QX79p7fQ9TXuOVxXAmjYpOHpuGCPAXP6uL/CPvWtXbuiAgXuL53u6Vd1DkclUQB5VntvlM/hHsX3uVjJd4vjOu2kGFhW/hqh1UWARq4yodVFgE3tKpykGFRTIfV45qR6YYjRnPuk5sgjkytWgTrtqRqUZrG1ftyBIU8BuoNIS8gouDsgAAAABJRU5ErkJggg==" alt=""></div>
                     <div class="cards__item-content">
                       <div class="cards__item-title">Better Dreams 2</div>
                       <ul class="cards__item-list cards__item-list--horizontal">
-                        <li class="cards__item-list-item">EDM</li>
-                        <li class="cards__item-list-item">Electro</li>
-                        <li class="cards__item-list-item">House</li>
-                        <li class="cards__item-list-item">Progressive House</li>
-                        <li class="cards__item-list-item">Tech House</li>
+                        <li class="cards__item-list-item"><a href="https://my.ampedstudio.com/marketplace?category=sample_packs&genre_filter%5B%5D=Hip+Hop">Hip Hop</a></li>
+                        <li class="cards__item-list-item"><a href="https://my.ampedstudio.com/marketplace?category=sample_packs&genre_filter%5B%5D=+RnB">RnB</a></li>
+                        <li class="cards__item-list-item"><a href="https://my.ampedstudio.com/marketplace?category=sample_packs&genre_filter%5B%5D=+Neo+Soul">Neo Soul</a></li>
+                        <li class="cards__item-list-item"><a href="https://my.ampedstudio.com/marketplace?category=sample_packs&genre_filter%5B%5D=+Chillhop">Chillhop</a></li>
+                        <li class="cards__item-list-item"><a href="https://my.ampedstudio.com/marketplace?category=sample_packs&genre_filter%5B%5D=+Lo-Fi+Beats">Lo-Fi Beats</a></li>
                       </ul>
-                      <a class="cards__item-btn btn btn--small btn--white btn--arrow" href="#"><span>GO TO MARKETPLACE</span></a>
+                      <a class="cards__item-btn btn btn--small btn--white btn--arrow" href="https://my.ampedstudio.com/marketplace/better-dreams-2"><span>GO TO MARKETPLACE</span></a>
                     </div>
                   </div>
                 </div>
                 <div class="cards__item swiper-slide">
-                  <div class="cards__item-inner">
-                    <div class="cards__item-image cards__item-image--gradient"><img src="public/images/workshop.jpg" alt=""></div>
+                  <div class="cards__item-inner" data-audio="https://amped-studio-content.s3.amazonaws.com/uploads/products/electro-house-vibes-vol-1/Emotional%20Piano%20Vol%201%20%20%20Demo%201.mp3">
+                    <div class="cards__item-image cards__item-image--gradient"><img src="https://d2dsarr59elxj9.cloudfront.net/uploads/products/electro-house-vibes-vol-1/image_processing20230130-1-ylg215.webp" alt=""></div>
+                    <div class="cards__item-hover-icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAA+CAYAAABzwahEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAM+SURBVHgB7ZpPSBRRHMd/vzc7bodQUOhQXZIyESMEK/9VVDf10iWiINOMbp06i506dIwO/VGQCiK6hRVIHW0tugjlH0QqCow6ZB7SnZ3367diQ647MTP7XrPjzAd2Z3fem9/sd3/z3vs+3gOIKQgaqZ8YqUGSN/k2nXwnAwgeg50bmGrv/wghkwKNoKQxQGxa/UKr7+cgldrFx6POmZAQoIn68eE2znLThgKCw3szI/sgZLQJJzK2g+tN5U4IGW3CISW19h+lok94mRO4c9uduV9p0spBIjSomsZn6i8sQYQIlPGGieHjKbCmAI0xFOK5+CE+1GWGOiBC+BaezzSBeISAf3VeWC3IeFg7dqsKIoJv4SkpW3lIqik8jwg70lXp/RARfLdxMuxKJJcOW9JWCIBqh+clnlbn5hXVDs9LvNCHM9UOz2u8wowjX9jFPfVZvjiNAu+8P9DzDDSSd3joktQ1hzcJPvAab13GGybuDbDoJ/zxNF97kmx62pAZvgI6Ue3wPMZzhO95/aCWyB4srMBD13UewkL31qpxHnXTXm5kE1a0kiGtRj58hjJAlWN0Mm4LkXatJMrD06t0jJGZpKh2jJERrtoxRkZ43jG6FgZwjLGdjyfC40YiPG4kwuNGIjxuJMLjRiI8biTC40YiPG4kwuNGZIQbFiy4lUmkZfBJZIQvb8lO8orYlyJFC2DRG/BJZITPN19aBClP8arg1z/nCGie/4zumQ7/qymOcEPKFddaJLJQBky39Y1buFQnUZwgKdtzYDZNt5x/CwFw1s6yFr4yK4rUIMytmDALZcJcy+WffHgJJeJkfO5I3zciulpYgZAG5pt7PsEmY10bn27tHQTMdXO7uY2EN/iPOMaP0jXQCQnXrR72P8pKjbdhD8zUof5RPozCfyPLzcgsWmJK+R00xQu9V59puThJCBuHI4QX79p7fQ9TXuOVxXAmjYpOHpuGCPAXP6uL/CPvWtXbuiAgXuL53u6Vd1DkclUQB5VntvlM/hHsX3uVjJd4vjOu2kGFhW/hqh1UWARq4yodVFgE3tKpykGFRTIfV45qR6YYjRnPuk5sgjkytWgTrtqRqUZrG1ftyBIU8BuoNIS8gouDsgAAAABJRU5ErkJggg==" alt=""></div>
                     <div class="cards__item-content">
-                      <div class="cards__item-title">Better Dreams 2</div>
+                      <div class="cards__item-title">Electro House Vibes Vol 1</div>
                       <ul class="cards__item-list cards__item-list--horizontal">
-                        <li class="cards__item-list-item">EDM</li>
-                        <li class="cards__item-list-item">Electro</li>
-                        <li class="cards__item-list-item">House</li>
-                        <li class="cards__item-list-item">Progressive House</li>
-                        <li class="cards__item-list-item">Tech House</li>
+                        <li class="cards__item-list-item"><a href="https://my.ampedstudio.com/marketplace?category=sample_packs&amp;genre_filter%5B%5D=EDM">EDM</a></li>
+                        <li class="cards__item-list-item"><a href="https://my.ampedstudio.com/marketplace?category=sample_packs&amp;genre_filter%5B%5D=+Electro">Electro</a></li>
+                        <li class="cards__item-list-item"><a href="https://my.ampedstudio.com/marketplace?category=sample_packs&amp;genre_filter%5B%5D=+House">House</a></li>
+                        <li class="cards__item-list-item"><a href="https://my.ampedstudio.com/marketplace?category=sample_packs&amp;genre_filter%5B%5D=+Progressive+House">Progressive House</a></li>
+                        <li class="cards__item-list-item"><a href="https://my.ampedstudio.com/marketplace?category=sample_packs&amp;genre_filter%5B%5D=+Tech+House">Tech House</a></li>
                       </ul>
-                      <a class="cards__item-btn btn btn--small btn--white btn--arrow" href="#"><span>GO TO MARKETPLACE</span></a>
+                      <a class="cards__item-btn btn btn--small btn--white btn--arrow" href="https://my.ampedstudio.com/marketplace/electro-house-vibes-vol-1"><span>GO TO MARKETPLACE</span></a>
                     </div>
                   </div>
                 </div>
                 <div class="cards__item swiper-slide">
-                  <div class="cards__item-inner">
-                    <div class="cards__item-image cards__item-image--gradient"><img src="public/images/workshop.jpg" alt=""></div>
+                  <div class="cards__item-inner" data-audio="https://amped-studio-content.s3.amazonaws.com/uploads/products/dark-soufside-4/Dark%20Soufside%204.mp3">
+                    <div class="cards__item-image cards__item-image--gradient"><img src="https://d2dsarr59elxj9.cloudfront.net/uploads/products/dark-soufside-4/image_processing20230213-1-am63va.webp" alt=""></div>
+                    <div class="cards__item-hover-icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAA+CAYAAABzwahEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAM+SURBVHgB7ZpPSBRRHMd/vzc7bodQUOhQXZIyESMEK/9VVDf10iWiINOMbp06i506dIwO/VGQCiK6hRVIHW0tugjlH0QqCow6ZB7SnZ3367diQ647MTP7XrPjzAd2Z3fem9/sd3/z3vs+3gOIKQgaqZ8YqUGSN/k2nXwnAwgeg50bmGrv/wghkwKNoKQxQGxa/UKr7+cgldrFx6POmZAQoIn68eE2znLThgKCw3szI/sgZLQJJzK2g+tN5U4IGW3CISW19h+lok94mRO4c9uduV9p0spBIjSomsZn6i8sQYQIlPGGieHjKbCmAI0xFOK5+CE+1GWGOiBC+BaezzSBeISAf3VeWC3IeFg7dqsKIoJv4SkpW3lIqik8jwg70lXp/RARfLdxMuxKJJcOW9JWCIBqh+clnlbn5hXVDs9LvNCHM9UOz2u8wowjX9jFPfVZvjiNAu+8P9DzDDSSd3joktQ1hzcJPvAab13GGybuDbDoJ/zxNF97kmx62pAZvgI6Ue3wPMZzhO95/aCWyB4srMBD13UewkL31qpxHnXTXm5kE1a0kiGtRj58hjJAlWN0Mm4LkXatJMrD06t0jJGZpKh2jJERrtoxRkZ43jG6FgZwjLGdjyfC40YiPG4kwuNGIjxuJMLjRiI8biTC40YiPG4kwuNGZIQbFiy4lUmkZfBJZIQvb8lO8orYlyJFC2DRG/BJZITPN19aBClP8arg1z/nCGie/4zumQ7/qymOcEPKFddaJLJQBky39Y1buFQnUZwgKdtzYDZNt5x/CwFw1s6yFr4yK4rUIMytmDALZcJcy+WffHgJJeJkfO5I3zciulpYgZAG5pt7PsEmY10bn27tHQTMdXO7uY2EN/iPOMaP0jXQCQnXrR72P8pKjbdhD8zUof5RPozCfyPLzcgsWmJK+R00xQu9V59puThJCBuHI4QX79p7fQ9TXuOVxXAmjYpOHpuGCPAXP6uL/CPvWtXbuiAgXuL53u6Vd1DkclUQB5VntvlM/hHsX3uVjJd4vjOu2kGFhW/hqh1UWARq4yodVFgE3tKpykGFRTIfV45qR6YYjRnPuk5sgjkytWgTrtqRqUZrG1ftyBIU8BuoNIS8gouDsgAAAABJRU5ErkJggg==" alt=""></div>
                     <div class="cards__item-content">
-                      <div class="cards__item-title">Better Dreams 2</div>
+                      <div class="cards__item-title">Dark Soufside 4</div>
                       <ul class="cards__item-list cards__item-list--horizontal">
-                        <li class="cards__item-list-item">EDM</li>
-                        <li class="cards__item-list-item">Electro</li>
-                        <li class="cards__item-list-item">House</li>
-                        <li class="cards__item-list-item">Progressive House</li>
-                        <li class="cards__item-list-item">Tech House</li>
+                        <li class="cards__item-list-item"><a href="https://my.ampedstudio.com/marketplace?category=sample_packs&genre_filter%5B%5D=Trap">Trap</a></li>
+                        <li class="cards__item-list-item"><a href="https://my.ampedstudio.com/marketplace?category=sample_packs&genre_filter%5B%5D=+Urban+">Urban</a></li>
+                        <li class="cards__item-list-item"><a href="https://my.ampedstudio.com/marketplace?category=sample_packs&genre_filter%5B%5D=+Drill">Drill</a></li>
                       </ul>
-                      <a class="cards__item-btn btn btn--small btn--white btn--arrow" href="#"><span>GO TO MARKETPLACE</span></a>
+                      <a class="cards__item-btn btn btn--small btn--white btn--arrow" href="https://my.ampedstudio.com/marketplace/dark-soufside-4"><span>GO TO MARKETPLACE</span></a>
                     </div>
                   </div>
                 </div>
                 <div class="cards__item swiper-slide">
-                  <div class="cards__item-inner">
-                    <div class="cards__item-image cards__item-image--gradient"><img src="public/images/workshop.jpg" alt=""></div>
+                  <div class="cards__item-inner" data-audio="https://amped-studio-content.s3.amazonaws.com/uploads/products/fred-zone/Demo%20%20%20Fred%20Zone.mp3">
+                    <div class="cards__item-image cards__item-image--gradient"><img src="https://d2dsarr59elxj9.cloudfront.net/uploads/products/fred-zone/image_processing20230202-1-1vaziqs.webp" alt=""></div>
+                    <div class="cards__item-hover-icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAA+CAYAAABzwahEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAM+SURBVHgB7ZpPSBRRHMd/vzc7bodQUOhQXZIyESMEK/9VVDf10iWiINOMbp06i506dIwO/VGQCiK6hRVIHW0tugjlH0QqCow6ZB7SnZ3367diQ647MTP7XrPjzAd2Z3fem9/sd3/z3vs+3gOIKQgaqZ8YqUGSN/k2nXwnAwgeg50bmGrv/wghkwKNoKQxQGxa/UKr7+cgldrFx6POmZAQoIn68eE2znLThgKCw3szI/sgZLQJJzK2g+tN5U4IGW3CISW19h+lok94mRO4c9uduV9p0spBIjSomsZn6i8sQYQIlPGGieHjKbCmAI0xFOK5+CE+1GWGOiBC+BaezzSBeISAf3VeWC3IeFg7dqsKIoJv4SkpW3lIqik8jwg70lXp/RARfLdxMuxKJJcOW9JWCIBqh+clnlbn5hXVDs9LvNCHM9UOz2u8wowjX9jFPfVZvjiNAu+8P9DzDDSSd3joktQ1hzcJPvAab13GGybuDbDoJ/zxNF97kmx62pAZvgI6Ue3wPMZzhO95/aCWyB4srMBD13UewkL31qpxHnXTXm5kE1a0kiGtRj58hjJAlWN0Mm4LkXatJMrD06t0jJGZpKh2jJERrtoxRkZ43jG6FgZwjLGdjyfC40YiPG4kwuNGIjxuJMLjRiI8biTC40YiPG4kwuNGZIQbFiy4lUmkZfBJZIQvb8lO8orYlyJFC2DRG/BJZITPN19aBClP8arg1z/nCGie/4zumQ7/qymOcEPKFddaJLJQBky39Y1buFQnUZwgKdtzYDZNt5x/CwFw1s6yFr4yK4rUIMytmDALZcJcy+WffHgJJeJkfO5I3zciulpYgZAG5pt7PsEmY10bn27tHQTMdXO7uY2EN/iPOMaP0jXQCQnXrR72P8pKjbdhD8zUof5RPozCfyPLzcgsWmJK+R00xQu9V59puThJCBuHI4QX79p7fQ9TXuOVxXAmjYpOHpuGCPAXP6uL/CPvWtXbuiAgXuL53u6Vd1DkclUQB5VntvlM/hHsX3uVjJd4vjOu2kGFhW/hqh1UWARq4yodVFgE3tKpykGFRTIfV45qR6YYjRnPuk5sgjkytWgTrtqRqUZrG1ftyBIU8BuoNIS8gouDsgAAAABJRU5ErkJggg==" alt=""></div>
                     <div class="cards__item-content">
-                      <div class="cards__item-title">Better Dreams 2</div>
+                      <div class="cards__item-title">Fred Zone</div>
                       <ul class="cards__item-list cards__item-list--horizontal">
-                        <li class="cards__item-list-item">EDM</li>
-                        <li class="cards__item-list-item">Electro</li>
-                        <li class="cards__item-list-item">House</li>
-                        <li class="cards__item-list-item">Progressive House</li>
-                        <li class="cards__item-list-item">Tech House</li>
+                        <li class="cards__item-list-item"><a href="https://my.ampedstudio.com/marketplace?category=sample_packs&amp;genre_filter%5B%5D=House">House</a></li>
+                        <li class="cards__item-list-item"><a href="https://my.ampedstudio.com/marketplace?category=sample_packs&amp;genre_filter%5B%5D=+Deep+House">Deep House</a></li>
+                        <li class="cards__item-list-item"><a href="https://my.ampedstudio.com/marketplace?category=sample_packs&amp;genre_filter%5B%5D=+Tech+House">Tech House</a></li>
+                        <li class="cards__item-list-item"><a href="https://my.ampedstudio.com/marketplace?category=sample_packs&amp;genre_filter%5B%5D=+Dance">Dance</a></li>
+                        <li class="cards__item-list-item"><a href="https://my.ampedstudio.com/marketplace?category=sample_packs&amp;genre_filter%5B%5D=+Pop">Pop</a></li>
                       </ul>
-                      <a class="cards__item-btn btn btn--small btn--white btn--arrow" href="#"><span>GO TO MARKETPLACE</span></a>
+                      <a class="cards__item-btn btn btn--small btn--white btn--arrow" href="https://my.ampedstudio.com/marketplace/fred-zone"><span>GO TO MARKETPLACE</span></a>
                     </div>
                   </div>
                 </div>
                 <div class="cards__item swiper-slide">
-                  <div class="cards__item-inner">
-                    <div class="cards__item-image cards__item-image--gradient"><img src="public/images/workshop.jpg" alt=""></div>
+                  <div class="cards__item-inner" data-audio="https://amped-studio-content.s3.amazonaws.com/uploads/products/dr-lex-808-dirty-south-1/Dr%20Lex%20808%20Dirty%20South%201%20Demo.mp3">
+                    <div class="cards__item-image cards__item-image--gradient"><img src="https://d2dsarr59elxj9.cloudfront.net/uploads/products/dr-lex-808-dirty-south-1/image_processing20230123-1-1dm86cp.webp" alt=""></div>
+                    <div class="cards__item-hover-icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAA+CAYAAABzwahEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAM+SURBVHgB7ZpPSBRRHMd/vzc7bodQUOhQXZIyESMEK/9VVDf10iWiINOMbp06i506dIwO/VGQCiK6hRVIHW0tugjlH0QqCow6ZB7SnZ3367diQ647MTP7XrPjzAd2Z3fem9/sd3/z3vs+3gOIKQgaqZ8YqUGSN/k2nXwnAwgeg50bmGrv/wghkwKNoKQxQGxa/UKr7+cgldrFx6POmZAQoIn68eE2znLThgKCw3szI/sgZLQJJzK2g+tN5U4IGW3CISW19h+lok94mRO4c9uduV9p0spBIjSomsZn6i8sQYQIlPGGieHjKbCmAI0xFOK5+CE+1GWGOiBC+BaezzSBeISAf3VeWC3IeFg7dqsKIoJv4SkpW3lIqik8jwg70lXp/RARfLdxMuxKJJcOW9JWCIBqh+clnlbn5hXVDs9LvNCHM9UOz2u8wowjX9jFPfVZvjiNAu+8P9DzDDSSd3joktQ1hzcJPvAab13GGybuDbDoJ/zxNF97kmx62pAZvgI6Ue3wPMZzhO95/aCWyB4srMBD13UewkL31qpxHnXTXm5kE1a0kiGtRj58hjJAlWN0Mm4LkXatJMrD06t0jJGZpKh2jJERrtoxRkZ43jG6FgZwjLGdjyfC40YiPG4kwuNGIjxuJMLjRiI8biTC40YiPG4kwuNGZIQbFiy4lUmkZfBJZIQvb8lO8orYlyJFC2DRG/BJZITPN19aBClP8arg1z/nCGie/4zumQ7/qymOcEPKFddaJLJQBky39Y1buFQnUZwgKdtzYDZNt5x/CwFw1s6yFr4yK4rUIMytmDALZcJcy+WffHgJJeJkfO5I3zciulpYgZAG5pt7PsEmY10bn27tHQTMdXO7uY2EN/iPOMaP0jXQCQnXrR72P8pKjbdhD8zUof5RPozCfyPLzcgsWmJK+R00xQu9V59puThJCBuHI4QX79p7fQ9TXuOVxXAmjYpOHpuGCPAXP6uL/CPvWtXbuiAgXuL53u6Vd1DkclUQB5VntvlM/hHsX3uVjJd4vjOu2kGFhW/hqh1UWARq4yodVFgE3tKpykGFRTIfV45qR6YYjRnPuk5sgjkytWgTrtqRqUZrG1ftyBIU8BuoNIS8gouDsgAAAABJRU5ErkJggg==" alt=""></div>
                     <div class="cards__item-content">
-                      <div class="cards__item-title">Better Dreams 2</div>
+                      <div class="cards__item-title">Dr Lex 808 Dirty South 1</div>
                       <ul class="cards__item-list cards__item-list--horizontal">
-                        <li class="cards__item-list-item">EDM</li>
-                        <li class="cards__item-list-item">Electro</li>
-                        <li class="cards__item-list-item">House</li>
-                        <li class="cards__item-list-item">Progressive House</li>
-                        <li class="cards__item-list-item">Tech House</li>
+                        <li class="cards__item-list-item"><a href="https://my.ampedstudio.com/marketplace?category=sample_packs&genre_filter%5B%5D=Dirty+South">Dirty South</a></li>
+                        <li class="cards__item-list-item"><a href="https://my.ampedstudio.com/marketplace?category=sample_packs&genre_filter%5B%5D=+Hip+Hop">Hip Hop</a></li>
+                        <li class="cards__item-list-item"><a href="https://my.ampedstudio.com/marketplace?category=sample_packs&genre_filter%5B%5D=+Urban">Urban</a></li>
                       </ul>
-                      <a class="cards__item-btn btn btn--small btn--white btn--arrow" href="#"><span>GO TO MARKETPLACE</span></a>
+                      <a class="cards__item-btn btn btn--small btn--white btn--arrow" href="https://my.ampedstudio.com/marketplace/dr-lex-808-dirty-south-1"><span>GO TO MARKETPLACE</span></a>
                     </div>
                   </div>
                 </div>
                 <div class="cards__item swiper-slide">
-                  <div class="cards__item-inner">
-                    <div class="cards__item-image cards__item-image--gradient"><img src="public/images/workshop.jpg" alt=""></div>
+                  <div class="cards__item-inner" data-audio="https://amped-studio-content.s3.amazonaws.com/uploads/products/future-house-music/Future%20House%20Music%20Demo.mp3">
+                    <div class="cards__item-image cards__item-image--gradient"><img src="https://d2dsarr59elxj9.cloudfront.net/uploads/products/future-house-music/image_processing20230118-1-1q1ktac.webp" alt=""></div>
+                    <div class="cards__item-hover-icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAA+CAYAAABzwahEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAM+SURBVHgB7ZpPSBRRHMd/vzc7bodQUOhQXZIyESMEK/9VVDf10iWiINOMbp06i506dIwO/VGQCiK6hRVIHW0tugjlH0QqCow6ZB7SnZ3367diQ647MTP7XrPjzAd2Z3fem9/sd3/z3vs+3gOIKQgaqZ8YqUGSN/k2nXwnAwgeg50bmGrv/wghkwKNoKQxQGxa/UKr7+cgldrFx6POmZAQoIn68eE2znLThgKCw3szI/sgZLQJJzK2g+tN5U4IGW3CISW19h+lok94mRO4c9uduV9p0spBIjSomsZn6i8sQYQIlPGGieHjKbCmAI0xFOK5+CE+1GWGOiBC+BaezzSBeISAf3VeWC3IeFg7dqsKIoJv4SkpW3lIqik8jwg70lXp/RARfLdxMuxKJJcOW9JWCIBqh+clnlbn5hXVDs9LvNCHM9UOz2u8wowjX9jFPfVZvjiNAu+8P9DzDDSSd3joktQ1hzcJPvAab13GGybuDbDoJ/zxNF97kmx62pAZvgI6Ue3wPMZzhO95/aCWyB4srMBD13UewkL31qpxHnXTXm5kE1a0kiGtRj58hjJAlWN0Mm4LkXatJMrD06t0jJGZpKh2jJERrtoxRkZ43jG6FgZwjLGdjyfC40YiPG4kwuNGIjxuJMLjRiI8biTC40YiPG4kwuNGZIQbFiy4lUmkZfBJZIQvb8lO8orYlyJFC2DRG/BJZITPN19aBClP8arg1z/nCGie/4zumQ7/qymOcEPKFddaJLJQBky39Y1buFQnUZwgKdtzYDZNt5x/CwFw1s6yFr4yK4rUIMytmDALZcJcy+WffHgJJeJkfO5I3zciulpYgZAG5pt7PsEmY10bn27tHQTMdXO7uY2EN/iPOMaP0jXQCQnXrR72P8pKjbdhD8zUof5RPozCfyPLzcgsWmJK+R00xQu9V59puThJCBuHI4QX79p7fQ9TXuOVxXAmjYpOHpuGCPAXP6uL/CPvWtXbuiAgXuL53u6Vd1DkclUQB5VntvlM/hHsX3uVjJd4vjOu2kGFhW/hqh1UWARq4yodVFgE3tKpykGFRTIfV45qR6YYjRnPuk5sgjkytWgTrtqRqUZrG1ftyBIU8BuoNIS8gouDsgAAAABJRU5ErkJggg==" alt=""></div>
                     <div class="cards__item-content">
-                      <div class="cards__item-title">Better Dreams 2</div>
+                      <div class="cards__item-title">Future House Music</div>
                       <ul class="cards__item-list cards__item-list--horizontal">
-                        <li class="cards__item-list-item">EDM</li>
-                        <li class="cards__item-list-item">Electro</li>
-                        <li class="cards__item-list-item">House</li>
-                        <li class="cards__item-list-item">Progressive House</li>
-                        <li class="cards__item-list-item">Tech House</li>
+                        <li class="cards__item-list-item"><a href="https://my.ampedstudio.com/marketplace?category=sample_packs&genre_filter%5B%5D=Future+House">Future House</a></li>
+                        <li class="cards__item-list-item"><a href="https://my.ampedstudio.com/marketplace?category=sample_packs&genre_filter%5B%5D=+House">House</a></li>
+                        <li class="cards__item-list-item"><a href="https://my.ampedstudio.com/marketplace?category=sample_packs&genre_filter%5B%5D=+EDM">EDM</a></li>
                       </ul>
-                      <a class="cards__item-btn btn btn--small btn--white btn--arrow" href="#"><span>GO TO MARKETPLACE</span></a>
+                      <a class="cards__item-btn btn btn--small btn--white btn--arrow" href="https://my.ampedstudio.com/marketplace/future-house-music"><span>GO TO MARKETPLACE</span></a>
                     </div>
                   </div>
                 </div>
@@ -774,7 +830,7 @@
                   <div class="cards__item-inner">
                     <div class="cards__item-content">
                       <div class="cards__item-text"><p>Create music without limits. With Amped Studio, your creativity will find a new voice!</p></div>
-                      <a class="cards__item-btn btn btn--arrow" href="#"><span>GO TO MARKETPLACE</span></a>
+                      <a class="cards__item-btn btn btn--arrow" href="https://my.ampedstudio.com/marketplace/"><span>GO TO MARKETPLACE</span></a>
                     </div>
                   </div>
                 </div>
@@ -989,5 +1045,6 @@
     </div>
     
     <script type="module" src="/src/js/main.js"></script>
+    
   </body>
 </html>
