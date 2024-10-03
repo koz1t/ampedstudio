@@ -47,15 +47,19 @@ export function swiperInit() {
     });
     
     new Swiper('.cards--stacked.swiper', {
-      effect: "cards",
       grabCursor: true,
-      observer: true,
-      observeParents: true,
-      cardsEffect: {
-        perSlideOffset: 15,
-        rotate: false,
-        slideShadows: false,
-      }, 
+      effect: "creative",
+      creativeEffect: {
+        limitProgress: 2,
+        prev: {
+          translate: [0, 0, -100],
+          rotate: [0, 0, 0],
+        },
+        next: {
+          translate: ['20%', 0, -125],
+          rotate: [0, 0, 0],
+        },
+      },
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -94,6 +98,11 @@ export function swiperInit() {
       if (window.innerWidth <= 480) {
         elements.forEach(element => {
           if (!element.swiper) { // Проверяем, не инициализирован ли уже слайдер
+            const autoplay = element.classList.contains('swiper--autoplay-mobile') ? {
+              delay: 3000,
+              disableOnInteraction: false
+            } : false;
+    
             element.swiper = new Swiper(element, {
               slidesPerView: 1,
               pagination: {
@@ -106,6 +115,7 @@ export function swiperInit() {
                 prevEl: '.swiper-button-prev',
               },
               speed: 500,
+              autoplay: autoplay
             });
           }
         });
@@ -118,6 +128,7 @@ export function swiperInit() {
         });
       }
     };
+    
     initializeSwiper();
     window.addEventListener('resize', initializeSwiper);
   }, 1000);

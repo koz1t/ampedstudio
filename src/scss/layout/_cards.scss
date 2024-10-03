@@ -323,7 +323,7 @@
       transition: 0.5s all;
     }
     &.swiper-initialized {
-      .cards__item:not(.swiper-slide-active) {
+      .cards__item-inner:not(:hover) {
         .cards__item-text {
           margin: 0;
           opacity: 0;

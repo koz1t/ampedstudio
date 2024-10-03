@@ -5,8 +5,10 @@ export function burgerMenu() {
     
   if (burgerBtn && header) {
     const handleClickOutside = (e) => {
-      if (!e.target.closest('.nav__link') && !e.target.closest('.burger-btn')) {
-        header.classList.remove('header--burger-active');
+      if (!e.target.closest('.burger-btn')) {
+        if (!e.target.closest('.header__burger-menu') || e.target.closest('.header__burger-close')) {
+          header.classList.remove('header--burger-active');
+        }
       }
     };
 

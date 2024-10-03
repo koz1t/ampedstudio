@@ -13,5 +13,18 @@ export function transferElements() {
       }
     });
   });
+  
+  let element = document.querySelector('.header__linguise');
+  if (element) {
+    new TransferElements({
+      sourceElement: element,
+      breakpoints: {
+        900: {
+          targetElement: document.querySelector('.header__burger-menu'),
+          targetPosition: 2,
+        }
+      }
+    });
+  }
   // ============
 }

@@ -38,6 +38,9 @@
     height: 0.125rem !important;
     background: var(--primary-color) !important;
   }
+  &-pagination span {
+    translate: 0 -23% !important;
+  }
 }
 
 @media (max-width: 900px) {

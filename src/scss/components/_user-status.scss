@@ -1,0 +1,8 @@
+body {
+  &:not(.user-authenticated) .user-status--authenticated,
+  &:not(.user-notauthenticated) .user-status--notauthenticated,
+  &:not(.user-premium) .user-status--premium,
+  &:not(.user-nonpremium) .user-status--nonpremium {
+    display: none !important;
+  }
+}
