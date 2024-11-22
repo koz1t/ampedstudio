@@ -306,6 +306,36 @@
         }
       }
     }
+    &-small {
+      &:not(.swiper-initialized) {
+        .swiper-wrapper {
+          grid-template-columns: repeat(5, 1fr);
+          gap: 1rem;
+        }
+      }
+      .cards__item--icon {
+        .cards__item-inner {
+          gap: 0.67rem;
+          min-height: auto;
+          padding: 0.67rem;
+          background: transparent;
+        }
+        .cards__item-image {
+          width: 2.33333rem;
+          height: 2.33333rem;
+        }
+        .cards__item-title {
+          font-size: 0.8333rem;
+          font-weight: 700;
+          line-height: 140%;
+          text-transform: uppercase;
+        }
+        .cards__item-text {
+          font-size: 0.66667rem;
+          color: #2D3747;
+        }
+      }
+    }
   }
   &--big {
     .cards__item-inner {
@@ -546,6 +576,43 @@
           }
         }
       }
+      &-small {
+        &:not(.swiper-initialized) {
+          .swiper-wrapper {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.5rem;
+          }
+          @media (min-width: 481px) {
+            &:has(.cards__item:nth-child(3n+2):last-child) {
+              .cards__item {
+                &:last-child,
+                &:nth-last-child(2) {
+                  position: relative;
+                  left: 52%;
+                }
+              }
+            }
+          }
+        }
+        .cards__item--icon {
+          .cards__item-inner {
+            gap: 0.7rem;
+          }
+          .cards__item-image {
+            width: 2.5rem;
+            height: 2.5rem;
+          }
+          .cards__item-title {
+            font-size: 0.9rem;
+            &:not(:first-child) {
+              margin-top: 0.3rem;
+            }
+          }
+          .cards__item-text {
+            font-size: 0.73rem;
+          }
+        }
+      }
     }
     &--big {
       .cards__item-inner {
@@ -714,6 +781,25 @@
           .cards__item-text,
           .cards__item-list {
             font-size: 0.75rem;
+          }
+        }
+      }
+      &-small {
+        &:not(.swiper-initialized) {
+          .swiper-wrapper {
+            grid-template-columns: repeat(2, 1fr);
+          }
+        }
+        .cards__item--icon {
+          .cards__item-image {
+            width: 2.75rem;
+            height: 2.75rem;
+          }
+          .cards__item-title {
+            font-size: 1rem;
+          }
+          .cards__item-text {
+            font-size: 0.85rem;
           }
         }
       }
