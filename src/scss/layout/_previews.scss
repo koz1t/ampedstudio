@@ -1,5 +1,6 @@
 .previews {
   display: grid;
+  grid-template-columns: repeat(4, 1fr);
   &__item {
     display: flex;
     gap: 1rem;
@@ -81,6 +82,7 @@
 
 @media (max-width: 900px) {
   .previews {
+    grid-template-columns: repeat(2, 1fr);
     &__item {
       gap: 1.2rem;
       min-height: 7rem;
@@ -131,6 +133,7 @@
 
 @media (max-width: 480px) {
   .previews {
+    grid-template-columns: 1fr;
     gap: 1rem;
     &__item {
       flex-direction: column;
