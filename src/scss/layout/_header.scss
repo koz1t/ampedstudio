@@ -63,6 +63,35 @@
         margin-right: 48px;
       }
     }
+    .header__linguise {
+      transform: translateY(-3px);
+      .linguise__icon, .linguise_flags {
+        width: 20px !important;
+        height: 20px !important;
+      }
+      .linguise_switcher .lccaret {
+        width: 16px !important;
+        height: 16px !important;
+      }
+      .linguise_current_lang {
+        padding: 0 0 0 26px !important;
+      }
+      .linguise_lang_name {
+        font-size: 14px !important;
+      }
+      .linguise_switcher_sub {
+        max-width: 240px !important;
+      }
+      .linguise-lang-item {
+        padding: 10px !important;
+      }
+      .linguise_switcher li a {
+        gap: 6px !important;
+      }
+      .popup_linguise_lang_name {
+        font-size: 14px !important;
+      }
+    } 
     .header__btn {
       padding: 10px 27px 10px 28px;
       font-size: 16px;
@@ -113,6 +142,35 @@
           margin-right: 5.5px;
         }
       }
+      .header__linguise {
+        transform: none;
+        .linguise__icon, .linguise_flags {
+          width: 20px !important;
+          height: 20px !important;
+        }
+        .linguise_switcher .lccaret {
+          width: 16px !important;
+          height: 16px !important;
+        }
+        .linguise_current_lang {
+          padding: 0 0 0 26px !important;
+        }
+        .linguise_lang_name {
+          font-size: 14px !important;
+        }
+        .linguise_switcher_sub {
+          max-width: 240px !important;
+        }
+        .linguise-lang-item {
+          padding: 10px !important;
+        }
+        .linguise_switcher li a {
+          gap: 6px !important;
+        }
+        .popup_linguise_lang_name {
+          font-size: 14px !important;
+        }
+      } 
       .header__studio-btn,
       .header__nav {
         display: none;
@@ -138,10 +196,6 @@
           margin: 16px auto;
           width: max-content;
           max-width: 100%;
-        }
-        .linguise__icon {
-          width: 17px !important;
-          height: 17px !important;
         }
       }
       &:not(.header--burger-active) {
