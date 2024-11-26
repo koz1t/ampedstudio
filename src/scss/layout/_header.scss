@@ -64,6 +64,9 @@
       }
     }
     .header__linguise {
+      &:not(:first-child) {
+        margin-left: 30px;
+      }
       transform: translateY(-3px);
       .linguise__icon, .linguise_flags {
         width: 20px !important;
