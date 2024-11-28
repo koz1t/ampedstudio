@@ -2,9 +2,18 @@
 // hero-section
 // ==================
 .hero-section {
-  &__title span:nth-child(odd),
-  &__text-wrapper {
-    margin-left: 6.05rem;
+  // &__title span:nth-child(odd),
+  // &__text-wrapper {
+  //   margin-left: 6.05rem;
+  // }
+  &__title-wrapper {
+    display: flex;
+    flex-direction: column;
+    span {
+      @extend .hero-section__title;
+      @extend .section__title;
+      @extend .section__title--big;
+    }
   }
   &__title {
     display: flex;
@@ -23,10 +32,10 @@
 
 @media (max-width: 900px) {
   .hero-section {
-    &__title span:nth-child(odd),
-    &__text-wrapper {
-      margin-left: 3.2rem;
-    }
+    // &__title span:nth-child(odd),
+    // &__text-wrapper {
+    //   margin-left: 3.2rem;
+    // }
     &__text-wrapper {
       gap: 1.2rem;
       max-width: 14.55rem;
@@ -42,10 +51,10 @@
 
 @media (max-width: 480px) {
   .hero-section {
-    &__title span:nth-child(odd),
-    &__text-wrapper {
-      margin-left: 2rem;
-    }
+    // &__title span:nth-child(odd),
+    // &__text-wrapper {
+    //   margin-left: 2rem;
+    // }
     &__text-wrapper {
       gap: 1rem;
       max-width: 18.5rem;
