@@ -64,5 +64,12 @@ export function scrollAnimationInit() {
       duration:500,
       easing:"cubic-bezier(0.37, 0.27, 0.24, 1.26)",
     })
+    .add(".tags__item",{
+      animation:"fadeInDown",
+      delay:75,
+      duration:150,
+      triggerBottom:1,
+      easing:"cubic-bezier(0.37, 0.27, 0.24, 1.26)"
+    })
     .init();
 }
