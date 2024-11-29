@@ -616,6 +616,13 @@
                 }
               }
             }
+            &:has(.cards__item:nth-child(3n + 1):last-child) {
+              .cards__item {
+                &:last-child {
+                  left: 104%;
+                }
+              }
+            }
           }
         }
         .cards__item--icon {
