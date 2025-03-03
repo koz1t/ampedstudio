@@ -6,7 +6,8 @@ build: {
 outDir: 'dist',
 rollupOptions: {
 input: {
-main: path.resolve(__dirname, 'index.html')
+main: path.resolve(__dirname, 'index.html'),
+soundshop: path.resolve(__dirname, 'soundshop.html')
 },
 output: [
 {

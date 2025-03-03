@@ -18,6 +18,8 @@
 @import 'components/user-status';
 @import 'components/linguise';
 @import 'components/tags';
+@import 'components/audio-btn';
+@import 'components/record-player';
 
 @import 'layout/container';
 @import 'layout/nav';
@@ -35,5 +37,7 @@
 @import 'layout/reviews';
 @import 'layout/previews';
 @import 'layout/simpleParallax';
+@import 'layout/products';
 
 @import 'pages/home';
+@import 'pages/soundshop';

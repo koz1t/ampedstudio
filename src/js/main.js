@@ -7,7 +7,8 @@ import { swiperInit } from './_swiper-init.js';
 import { transferElements } from './_transfer-elements.js'; 
 import { scrollAnimationInit } from './_scroll-animation-init.js'; 
 import { parallax } from './_parallax-init.js'; 
-import { audioHover } from './_audio-hover.js'; 
+import { audioHover } from './_audio-hover.js';
+import { audioBtn } from './_audio-btn.js';
 
 document.addEventListener('DOMContentLoaded', function() {
   authorization();
@@ -18,4 +19,5 @@ document.addEventListener('DOMContentLoaded', function() {
   scrollAnimationInit();
   parallax();
   audioHover();
+  audioBtn();
 })

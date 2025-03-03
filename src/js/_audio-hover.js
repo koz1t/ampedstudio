@@ -15,7 +15,7 @@ export function audioHover() {
 
       if (playPromise !== undefined) {
         playPromise.catch(error => {
-          console.error('Error playing audio:', error);
+          // console.error('Error playing audio:', error);
         });
       }
     });

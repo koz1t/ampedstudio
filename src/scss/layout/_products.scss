@@ -1,0 +1,200 @@
+.products {
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 0.83rem;
+    row-gap: 2.58rem;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    padding: 0.88rem;
+    background: #FAFAF9;
+    border: 0.041667rem solid rgba(0, 0, 0, 0.10);
+    border-radius: 0.33333rem;
+    box-shadow: 0 0.1667rem 0.41667rem 0 rgba(0, 0, 0, 0.15);
+    &-image {
+      @extend %adaptive-image;
+      padding-bottom: 100%;
+      img {
+        transition: 0.4s all
+      }
+      .audio-btn {
+        @extend %absolute-center;
+        z-index: 2;
+      }
+      &:hover,
+      &:has(.audio-btn--active) {
+        img {
+          filter: brightness(0.7);
+        }
+      }
+      &:not(:hover):not(:has(.audio-btn--active)) {
+        .audio-btn {
+          opacity: 0;
+          visibility: hidden;
+        }
+      }
+    }
+    &-content {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      &:not(:first-child) {
+        margin-top: 0.38rem;
+      }
+    }
+    &-title {
+      display: block;
+      font-weight: 600;
+      color: #374151;
+      transition: 0.3s all;
+      &:hover {
+        color: var(--primary-color);
+      }
+    }
+    &-categories {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 0.7rem;
+      row-gap: 0.45rem;
+      &:not(:first-child) {
+        margin-top: 0.5rem;
+      }
+      &:not(:last-child) {
+        margin-bottom: 1.3rem;
+      }
+    }
+    &-category {
+      font-size: 0.8333rem;
+      line-height: 0.83333rem;
+      color: #9CA3AF;
+      transition: 0.3s all;
+      &:not(:last-child) {
+        position: relative;
+        &::after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: calc(100% + 0.35rem);
+          transform: translate(-50%, -50%);
+          width: 0.25rem;
+          height: 0.25rem;
+          background: var(--primary-color);
+          border-radius: 100%;
+          pointer-events: none;
+        }
+      }
+      &:hover {
+        color: var(--primary-color);
+      }
+    }
+    &-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      row-gap: 0.5rem;
+      margin-top: auto;
+    }
+    &-price {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--primary-color);
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .products {
+    &__items {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 1.5rem;
+    }
+    &__item {
+      // padding: 0.8rem;
+      // &-title {
+      //   font-size: 0.9rem;
+      //   line-height: 130%;
+      // }
+      // &-category {
+      //   font-size: 0.7rem;
+      // }
+      // &-btn {
+      //   padding: 0.35rem 1rem;
+      //   font-size: 0.6rem;
+      //   &:not(:first-child) {
+      //     margin-top: 1rem;
+      //   }
+      // }
+      &-price {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .products {
+    &__items {
+      row-gap: 1rem;
+    }
+    &__item {
+      padding: 0.6rem;
+      &-title {
+        font-size: 0.75rem;
+        line-height: 130%;
+      }
+      &-categories {
+        &:not(:first-child) {
+          margin-top: 0.4rem;
+        }
+        &:not(:last-child) {
+          margin-bottom: 0.8rem;
+        }
+      }
+      &-category {
+        font-size: 0.7rem;
+      }
+      &-btn {
+        padding: 0.35rem 0.7rem;
+        font-size: 0.6rem;
+      }
+      &-price {
+        font-size: 0.85rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .products {
+    &__items {
+      grid-template-columns: 1fr;
+    }
+    &__item {
+      padding: 1rem;
+      &-title {
+        font-size: 1.1rem;
+      }
+      &-categories {
+        &:not(:first-child) {
+          margin-top: 0.7rem;
+        }
+        &:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+      }
+      &-category {
+        font-size: 0.85rem;
+      }
+      &-btn {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.85rem;
+      }
+      &-price {
+        font-size: 1.25rem;
+      }
+    }
+  }
+}
