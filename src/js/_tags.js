@@ -4,9 +4,11 @@ export function tags() {
     const tagSpoiler = tag.querySelector('.tags__spoiler');
     tagSpoiler?.addEventListener('click', () => {
       if (tagSpoiler.classList.toggle('tags__spoiler--active')) {
-        if (!tagSpoiler.querySelector('span')) tagSpoiler.innerHTML = 'Hidden';
+        if (!tagSpoiler.querySelector('span') && !tagSpoiler.classList.contains('tags__spoiler--icons'))
+          tagSpoiler.innerHTML = 'Hidden';
       } else {
-        if (!tagSpoiler.querySelector('span')) tagSpoiler.innerHTML = 'More';
+        if (!tagSpoiler.querySelector('span') && !tagSpoiler.classList.contains('tags__spoiler--icons'))
+          tagSpoiler.innerHTML = 'More';
       }
     })
   });
