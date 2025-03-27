@@ -3,7 +3,11 @@ export function tags() {
   tags.forEach(tag => {
     const tagSpoiler = tag.querySelector('.tags__spoiler');
     tagSpoiler?.addEventListener('click', () => {
-      tagSpoiler.classList.toggle('tags__spoiler--active');
+      if (tagSpoiler.classList.toggle('tags__spoiler--active')) {
+        if (!tagSpoiler.querySelector('span')) tagSpoiler.innerHTML = 'Hidden';
+      } else {
+        if (!tagSpoiler.querySelector('span')) tagSpoiler.innerHTML = 'More';
+      }
     })
   });
 }
