@@ -9,6 +9,7 @@ import { scrollAnimationInit } from './_scroll-animation-init.js';
 import { parallax } from './_parallax-init.js'; 
 import { audioHover } from './_audio-hover.js';
 import { audioBtn } from './_audio-btn.js';
+import { tags } from './_tags.js';
 
 document.addEventListener('DOMContentLoaded', function() {
   authorization();
@@ -20,4 +21,5 @@ document.addEventListener('DOMContentLoaded', function() {
   parallax();
   audioHover();
   audioBtn();
+  tags();
 })

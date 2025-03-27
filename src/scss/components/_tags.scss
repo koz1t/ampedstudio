@@ -17,7 +17,7 @@
       }
     }
   }
-  &__spoiler {
+  .tags__spoiler {
     order: 999;
     background: var(--primary-color);
     input[type="checkbox"] {
@@ -28,7 +28,8 @@
       border-color: var(--dark-primary-color);
     }
   }
-  &:has(.tags__spoiler input[type="checkbox"]:not(:checked)) {
+  &:has(label.tags__spoiler input[type="checkbox"]:not(:checked)),
+  &:has(button.tags__spoiler:not(.tags__spoiler--active)) {
     .tags__spoiler span:nth-child(2) {
       display: none;
     }
@@ -36,12 +37,13 @@
       display: none;
     }
   }
-  &:has(.tags__spoiler input[type="checkbox"]:checked) {
+  &:has(label.tags__spoiler input[type="checkbox"]:checked),
+  &:has(button.tags__spoiler--active) {
     .tags__spoiler span:nth-child(1) {
       display: none;
     }
   }
-  &:not(:has(.tags__item:nth-child(12))) &__spoiler {
+  &:not(:has(.tags__item:nth-child(12))) .tags__spoiler {
     display: none;
   }
   &--small {
